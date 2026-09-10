@@ -84,8 +84,8 @@ export default function App() {
         />
       )}
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="flex gap-6">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
+        <div className="flex gap-6 lg:gap-10 xl:gap-12">
 
           {/* ── Main Content ──────────────────────────────────────── */}
           <main className="flex-1 min-w-0">
@@ -131,7 +131,7 @@ export default function App() {
 
             {/* Menu Grid — using .map() */}
             {filteredMenu.length > 0 ? (
-              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 sm:gap-6">
                 {filteredMenu.map((item) => {
                   const cartItem = cart.find((c) => c.id === item.id);
                   return (
